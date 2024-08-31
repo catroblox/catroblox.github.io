@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a1a55;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    background-color: #3b0a45;
+    padding: 10px 0;
+    border-bottom: 1px solid #6c2d91;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.top-buttons {
+    display: flex;
+}
+
+.top-buttons .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.download-btn {
+    background-color: #5a2a7b;
+    color: #fff;
+}
+
+.discord-btn {
+    background-color: #7289DA;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('background.gif');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20vh 0;
+    background-color: #3b0a45;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #dcdcdc;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc;
+}
+
+.center-buttons {
+    margin-top: 2rem;
+}
+
+.center-buttons .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #3b0a45;
+    color: #dcdcdc;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.125rem;
+    }
+
+    .top-buttons .btn {
+        font-size: 0.875rem;
+        padding: 8px 15px;
+    }
+
+    .hero {
+        padding: 15vh 0;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .center-buttons .btn {
+        font-size: 0.875rem;
+        padding: 8px 15px;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}
